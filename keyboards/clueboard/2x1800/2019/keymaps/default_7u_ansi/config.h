@@ -1,5 +1,4 @@
-/*
- * Copyright 2018 Jack Humbert <jack.humb@gmail.com>
+/* Copyright 2017 Zach White <skullydazed@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,16 +16,6 @@
 
 #pragma once
 
-#include "quantum.h"
+#include "config_common.h"
 
-#define COUNTRECLOCKWISE 0
-#define CLOCKWISE 1
-
-void encoder_init(void);
-void encoder_read(void);
-
-__attribute__((weak))
-void encoder_update_kb(int8_t index, bool clockwise);
-
-__attribute__((weak))
-void encoder_update_user(int8_t index, bool clockwise);
+// place overrides here
